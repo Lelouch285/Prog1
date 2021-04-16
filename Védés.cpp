@@ -22,7 +22,7 @@ int main() {
 	poly.add(Point{ 120, 160 });
 	poly.add(Point{ 250, 200 });
 	poly.add(Point{ 10, 200 });
-	poly.set_style(Line_style::dash);
+	poly.set_style(Line_style(Line_style::dash,4));
 	poly.set_color(Color::blue);
 
 	Rectangle rec{ Point{350,250}, 110, 70 };
@@ -37,7 +37,11 @@ int main() {
   
 	Circle kor{ Point{350,275}, 50 };
 	kor.set_fill_color(Color::red);
+	
+	Ellipse e {Point{100,200}, 75,25};
+	e.set_color(Color::dark_red);
 
+	win.attach(e);
 	win.attach(xa);
 	win.attach(ya);
 	win.attach(szinusz);
@@ -48,7 +52,6 @@ int main() {
 	win.attach(kep1);
 	win.wait_for_button();
 }
-
 
 
 
