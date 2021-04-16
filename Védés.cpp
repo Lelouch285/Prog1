@@ -32,7 +32,7 @@ int main() {
 	proba.set_font_size(55);
 	
 
-	Image kep1 {Point{100,50},"kep1.jpg"};
+	Image kep1 {Point{100,50},"kep1.jpeg"};
         
   
 	Circle kor{ Point{350,275}, 50 };
